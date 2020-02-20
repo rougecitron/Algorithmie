@@ -93,6 +93,18 @@ Par exemple, si l’on entre 5, le programme doit calculer : 1 + 2 + 3 + 4 + 5 =
 
 Ecrire un algorithme qui affiche les nombres pairs entre 1 et 10 (Connaissez-vous le modulo ?)
 
+    Variables i en Entier
+    Debut
+        Pour i = 1 à 10
+
+            Si (i%2) = 0 Alors
+                Ecrire i
+            FinSi
+
+        FinPour        
+    Fin
+
+
 ## Exo 7
 
 Ecrire un algorithme qui demande successivement 20 nombres à l’utilisateur, et qui lui dise ensuite quel était le plus grand parmi ces 20 nombres :<br/>
@@ -161,16 +173,16 @@ Lire la suite des prix (en euros entiers et terminée par zéro) des achats d’
 
         Reste ← paye - somdue
 
-        Nb10E ← 0
+        Nb10E = 0
         TantQue Reste >= 10
-            Nb10E ← Nb10E + 1
-            Reste ← Reste – 10
+            Nb10E = Nb10E + 1
+            Reste = Reste – 10
         FinTantQue
 
-        Nb5E ← 0
+        Nb5E = 0
         Si Reste >= 5
-            Nb5E ← 1
-            Reste ← Reste – 5
+            Nb5E = 1
+            Reste = Reste – 5
         FinSi
 
         Ecrire "Rendu de la monnaie :"
